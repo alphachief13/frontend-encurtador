@@ -11,184 +11,578 @@ body{
   background-color: rgb(235, 235, 235);
 }
 
-header{
-  background-color: rgb(55, 66, 216);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+/* Computadores (desktops) */
+@media (min-width: 1025px) {
+
+  header{
+    background-color: rgb(55, 66, 216);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text{
+    text-align: center;
+  }
+  
+  .close{
+    position: absolute;
+    right: 20px;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    user-select: none;
+  
+  }
+  
+  .close:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  header p {
+    text-align: center;
+    color: white;
+    transform: translateX(1%);
+  }
+  
+  header p a{
+    color: rgb(255, 196, 0);
+  }
+  
+  
+  
+  .section1{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo-div{
+    transition: transform 0.3s ease;
+  } 
+  
+  .titulo-div:hover{
+    transform: translateX(0.3vw) translateY(-0.3vh);
+    cursor: pointer;
+    user-select: none;
+  } 
+  
+  .titulo-div h1 span{
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 50px;
+    letter-spacing: -0.1vw;
+  }
+  
+  .s-1{
+    color: rgb(218, 43, 12);
+  
+  
+  }
+  .s-2{
+    color: rgb(1, 141, 255);
+  
+  }
+  .s-3{
+    color: rgb(78, 199, 8);
+  
+  
+  }
+  
+  .subtitulo-div{
+    font-size: 15px;
+  }
+  
+  .input-div{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-div input{
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    outline: none;
+    width: 80vw;
+    height: 5vh;
+    padding: 0.8vh;
+    font-size: 15px;
+    font-family: "Lexend" , sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  
+  .button-div button{
+    background-color: rgb(55, 66, 216);
+    border: none;
+    padding: 10px;
+    width: 30vw;
+    border-radius: 5px;
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+    font-family: "Lexend", sans-serif;
+    transition: opacity 0.2s ease;
+  }
+  
+  .button-div button:hover{
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  
+  
+  .urls-box{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+  
+  .box{
+    background-color: white;
+    width: 70%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+  }
+  .box p {
+    color: rgb(49, 49, 49);
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .box a {
+    color: rgb(55, 66, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  
+  }
+  
+  .box-carregando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .log{
+    text-align: center;
+    color: rgb(55, 66, 216);
+    margin-top: 1vh;
+  
+  }
+  
+  .h1-links{
+    color: rgb(218, 43, 12);
+  }
 }
 
-.text{
-  text-align: center;
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  header{
+    background-color: rgb(55, 66, 216);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text{
+    text-align: center;
+  }
+  
+  .close{
+    position: absolute;
+    right: 20px;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    user-select: none;
+  
+  }
+  
+  .close:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  header p {
+    text-align: center;
+    color: white;
+    transform: translateX(1%);
+  }
+  
+  header p a{
+    color: rgb(255, 196, 0);
+  }
+  
+  
+  
+  .section1{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo-div{
+    transition: transform 0.3s ease;
+  } 
+  
+  .titulo-div:hover{
+    transform: translateX(0.3vw) translateY(-0.3vh);
+    cursor: pointer;
+    user-select: none;
+  } 
+  
+  .titulo-div h1 span{
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 50px;
+    letter-spacing: -0.1vw;
+  }
+  
+  .s-1{
+    color: rgb(218, 43, 12);
+  
+  
+  }
+  .s-2{
+    color: rgb(1, 141, 255);
+  
+  }
+  .s-3{
+    color: rgb(78, 199, 8);
+  
+  
+  }
+  
+  .subtitulo-div{
+    font-size: 15px;
+  }
+  
+  .input-div{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-div input{
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    outline: none;
+    width: 80vw;
+    height: 5vh;
+    padding: 0.8vh;
+    font-size: 15px;
+    font-family: "Lexend" , sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  
+  .button-div button{
+    background-color: rgb(55, 66, 216);
+    border: none;
+    padding: 10px;
+    width: 30vw;
+    border-radius: 5px;
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+    font-family: "Lexend", sans-serif;
+    transition: opacity 0.2s ease;
+  }
+  
+  .button-div button:hover{
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  
+  
+  .urls-box{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+  
+  .box{
+    background-color: white;
+    width: 70%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+  }
+  .box p {
+    color: rgb(49, 49, 49);
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .box a {
+    color: rgb(55, 66, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  
+  }
+  
+  .box-carregando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .log{
+    text-align: center;
+    color: rgb(55, 66, 216);
+    margin-top: 1vh;
+  
+  }
+  
+  .h1-links{
+    color: rgb(218, 43, 12);
+  }
 }
 
-.close{
-  position: absolute;
-  right: 20px;
-  color: white;
-  padding: 1px 5px 1px 5px;
-  user-select: none;
+/* Celulares */
+@media (max-width: 767px) {
 
+  header{
+    background-color: rgb(55, 66, 216);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text{
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .close{
+    position: absolute;
+    right: 10px;
+    color: black;
+    padding: 1px 5px 1px 5px;
+    user-select: none;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .close:hover{
+    cursor: pointer;
+
+  }
+  
+  header p {
+    text-align: center;
+    color: white;
+    transform: translateX(1%);
+  }
+  
+  header p a{
+    color: rgb(255, 196, 0);
+  }
+  
+  
+  
+  .section1{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo-div{
+    transition: transform 0.3s ease;
+  } 
+  
+  .titulo-div:hover{
+    transform: translateX(0.3vw) translateY(-0.3vh);
+    cursor: pointer;
+    user-select: none;
+  } 
+  
+  .titulo-div h1 span{
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 30px;
+    letter-spacing: -0.1vw;
+  }
+  
+  .s-1{
+    color: rgb(218, 43, 12);
+  
+  
+  }
+  .s-2{
+    color: rgb(1, 141, 255);
+  
+  }
+  .s-3{
+    color: rgb(78, 199, 8);
+  
+  
+  }
+  
+  .subtitulo-div{
+    font-size: 12px;
+  }
+  
+  .input-div{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-div input{
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    outline: none;
+    width: 80vw;
+    height: 5vh;
+    padding: 0.8vh;
+    font-size: 15px;
+    font-family: "Lexend" , sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  
+  .button-div button{
+    background-color: rgb(55, 66, 216);
+    border: none;
+    padding: 10px;
+    width: 50vw;
+    border-radius: 5px;
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+    font-family: "Lexend", sans-serif;
+    transition: opacity 0.2s ease;
+  }
+  
+  .button-div button:hover{
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  
+  
+  .urls-box{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+  
+  .box{
+    background-color: white;
+    width: 70%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+  .box p {
+    color: rgb(49, 49, 49);
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  
+  .box a {
+    color: rgb(55, 66, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .box-carregando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .log{
+    text-align: center;
+    color: rgb(55, 66, 216);
+    margin-top: 1vh;
+  
+  }
+  
+  .h1-links{
+    color: rgb(218, 43, 12);
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
-.close:hover{
-  cursor: pointer;
-  color: black;
-  background-color: white;
-  border-radius: 3px;
-}
-
-header p {
-  text-align: center;
-  color: white;
-  transform: translateX(1%);
-}
-
-header p a{
-  color: rgb(255, 196, 0);
-}
-
-
-
-.section1{
-  margin-top: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.titulo-div{
-  transition: transform 0.3s ease;
-} 
-
-.titulo-div:hover{
-  transform: translateX(0.3vw) translateY(-0.3vh);
-  cursor: pointer;
-  user-select: none;
-} 
-
-.titulo-div h1 span{
-  margin-left: 1px;
-  margin-right: 1px;
-  font-size: 50px;
-  letter-spacing: -0.1vw;
-}
-
-.s-1{
-  color: rgb(218, 43, 12);
-
-
-}
-.s-2{
-  color: rgb(1, 141, 255);
-
-}
-.s-3{
-  color: rgb(78, 199, 8);
-
-
-}
-
-.subtitulo-div{
-  font-size: 15px;
-}
-
-.input-div{
-  margin-top: 7vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-div input{
-  border: 1px solid rgb(150, 150, 150);
-  border-radius: 5px;
-  outline: none;
-  width: 80vw;
-  height: 5vh;
-  padding: 0.8vh;
-  font-size: 15px;
-  font-family: "Lexend" , sans-serif;
-  background-color: rgb(245, 245, 245);
-}
-
-.button-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
   margin-top: 2vh;
-}
-
-.button-div button{
-  background-color: rgb(55, 66, 216);
-  border: none;
+  background-color: rgb(139, 139, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  width: 30vw;
-  border-radius: 5px;
-  color: rgb(247, 247, 247);
-  font-size: 15px;
-  font-family: "Lexend", sans-serif;
-  transition: opacity 0.2s ease;
+  font-size: 1rem;
 }
 
-.button-div button:hover{
-  cursor: pointer;
-  opacity: 0.85;
-}
-
-
-.urls-box{
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
-}
-
-.box{
-  background-color: white;
-  width: 70%;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px gray;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5vh;
-}
-.box p {
-  color: rgb(49, 49, 49);
-  font-size: 13px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.box a {
-  color: rgb(55, 66, 216);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
-
-}
-
-.box-carregando{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.log{
-  text-align: center;
-  color: rgb(55, 66, 216);
-  margin-top: 1vh;
-
-}
-
-.h1-links{
-  color: rgb(218, 43, 12);
+footer a{
+  color: white;
 }
